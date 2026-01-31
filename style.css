@@ -1,0 +1,136 @@
+:root {
+    /* Paleta de Cores Pastel */
+    --pastel-teal: #a8d8ea;
+    --pastel-teal-dark: #8fcbde;
+    --pastel-orange: #fcd5ce;
+    --pastel-orange-dark: #fac0b6;
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-primary: #2d3436;
+    --text-secondary: #636e72;
+    --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Largura ideal para mobile/link-in-bio */
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styles */
+.profile-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 4px solid white;
+    box-shadow: var(--shadow-soft);
+    object-fit: cover;
+    display: block;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+    color: var(--text-primary);
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+/* Grid Layout */
+.product-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    padding: 1.2rem;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-left: 6px solid var(--pastel-teal);
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+    border-left-color: var(--pastel-teal-dark);
+}
+
+.card.highlight {
+    border-left-color: var(--pastel-orange);
+}
+
+.card.highlight:hover {
+    border-left-color: var(--pastel-orange-dark);
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title::after {
+    content: '→';
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.2s ease;
+    color: var(--pastel-teal-dark);
+}
+
+.card:hover .card-title::after {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.card-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+footer {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
