@@ -1,7 +1,13 @@
 const products = [
     {
-        title: "Pronova Coffee Stories Special Fruity",
+        title: "Bravo Café - Tenor em Grãos 500G",
         description: "Café em grãos com melhor custo benefício.",
+        link: "https://amzn.to/46u5HhW",
+        highlight: true
+    },
+    {
+        title: "Pronova Coffee Stories Special Fruity",
+        description: "Outra excelente opção de café em grãos.",
         link: "https://amzn.to/45IuE8V",
         highlight: true
     },
