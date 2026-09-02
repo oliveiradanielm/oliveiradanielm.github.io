@@ -1,30 +1,31 @@
 const products = [
     {
-        title: "Bravo Café - Tenor em Grãos 500G",
-        description: "Café em grãos com melhor custo benefício.",
-        link: "https://amzn.to/46u5HhW",
+        title: "Kit 4 Pacotes Café Especial em Grãos Coffee",
+        description: "Café em grãos de excelente qualidade",
+        link: "https://link.amazon/B09vbZB4T",
         highlight: true
+        
     },
     {
-        title: "Pronova Coffee Stories Special Fruity",
-        description: "Outra excelente opção de café em grãos.",
-        link: "https://amzn.to/45IuE8V",
+        title: "Bravo Café - Tenor em Grãos 500G",
+        description: "Café em grãos com melhor custo benefício.",
+        link: "https://link.amazon/B03saquRX",
         highlight: true
     },
     {
         title: "Orfeu Café Clássico em Grãos, 100% Arabica, Torra Média, 1kg",
         description: "Opção de café com uma das melhores avaliações no site.",
-        link: "https://amzn.to/4t9uD81"
+        link: "https://link.amazon/B04CN8UKu"
     },
     {
         title: "Galápagos, The Mind, Jogo de Cartas",
         description: "Casual para Amigos, 2 a 4 jogadores, 15 minutos por partida.",
-        link: "https://amzn.to/4qQnOGK"
+        link: "https://link.amazon/B04y3TRNL"
     },
     {
         title: "Escova de Limpeza Multiuso para Tênis",
         description: "Escova de Limpeza Multiuso com Reservatório E Dispenser, Escovinha Cerdas Duplas, Limpa tenis, sapato, roupa, sofa, calçados, uso liquido detergente sabao, Modelo Premium.",
-        link: "https://amzn.to/4anrwlj"
+        link: "https://link.amazon/B07GRY7p9"
     }
 ];
 
